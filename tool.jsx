@@ -1,27 +1,32 @@
 require("./node_modules/bootstrap/dist/css/bootstrap.min.css")
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Example1 from './example1';
+import Example2 from './example2';
+import Example3 from './example3';
+import Example4 from './example4';
+import Example5 from './example5';
 
 export class Tool extends React.Component {
 	
      handleExample1 () {
-     		console.log('click example1');
-     }
+          ReactDOM.render(<Example1 />, document.querySelector("#myApp"));
+     } 
 
      handleExample2() {
-           console.log('click example2');
+          ReactDOM.render(<Example2 />, document.querySelector("#myApp"));
      }
 
      handleExample3() {
-           console.log('click example3');
+          ReactDOM.render(<Example3 />, document.querySelector("#myApp"));
      }
 
      handleExample4() {
-     	      console.log('click example4');
+     	     ReactDOM.render(<Example4 />, document.querySelector("#myApp"))
      }
 
      handleExample5() {
-            console.log('click example5');
+           ReactDOM.render(<Example5 />, document.querySelector("#myApp"))
      }
 
 	render() {
