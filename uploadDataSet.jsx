@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-export default class Example2 extends React.Component {
+export default class UploadDataSet extends React.Component {
 
 	render(){
 		return (

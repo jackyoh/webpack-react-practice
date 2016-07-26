@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import DataSetAction from './action/DataSetAction.js';
+import CreateDataSet_sub1 from './createDataSet_sub1.jsx';
 
-export default class Example1 extends React.Component {
+export default class CreateDataSet extends React.Component {
         handlerCreateDataSet() {
             console.log('CREATE DATA SET');
 	    DataSetAction.createDataSet();
-            //ReactDOM.render(<Example2 />, document.querySelector("#myApp"));
+            ReactDOM.render(<CreateDataSet_sub1 />, document.querySelector("#myApp"));
 
         }
 	render(){

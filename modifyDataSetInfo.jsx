@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-export default class Example4 extends React.Component {
+export default class ModifyDataSetInfo extends React.Component {
 
 	render(){
 		return (
