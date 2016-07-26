@@ -31,15 +31,15 @@ export class Tool extends React.Component {
 
 	render() {
 		return (
-			<div>
-                    <ul>
-			       <li onClick = { this.handleExample1 }>example1</li>
-			       <li onClick = { this.handleExample2 }>example2</li>
-			       <li onClick = { this.handleExample3 }>example3</li>
-			       <li onClick = { this.handleExample4 }>example4</li>
-			       <li onClick = { this.handleExample5 }>example5</li>
-                    </ul>
-			</div>
+		
+                      <ul>
+			 <li onClick = { this.handleExample1 }><a tabindex="-1" href="#">建立資料集</a></li>
+                         <li onClick = { this.handleExample2 }><a tabindex="-1" href="#">上傳資料集</a></li>
+                         <li onClick = { this.handleExample3 }><a tabindex="-1" href="#">刪除資料集</a></li>
+                         <li onClick = { this.handleExample4 }><a tabindex="-1" href="#">修改資料集資訊</a></li> 
+                        
+                      </ul>
+		   
 		);
 	}
 }

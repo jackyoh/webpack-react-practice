@@ -6,7 +6,8 @@ module.exports = {
 	entry: [
 		'webpack-dev-server/client?http://0.0.0.0:8080', // WebpackDevServer host and port
 		'webpack/hot/only-dev-server',
-		'./example1.jsx',
+                'bootstrap-loader',
+                './example1.jsx',
 		'./example2.jsx',
 		'./example3.jsx',
 		'./example4.jsx',
@@ -32,6 +33,9 @@ module.exports = {
 			inline: true
 		},
 	plugins: [
-		new webpack.NoErrorsPlugin()
+		new webpack.NoErrorsPlugin(),
+                new webpack.ProvidePlugin({
+                    jQuery: 'jquery',
+                }),
 	]
 };
