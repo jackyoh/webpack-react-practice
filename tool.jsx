@@ -14,7 +14,14 @@ export class Tool extends React.Component {
      } 
 
      handleExample2() {
-          ReactDOM.render(<Example2 />, document.querySelector("#myApp"));
+          var data = [
+               {'When':'2 minutes ago', 'Who':'Jill Dupre', 'Description':'Created new acount'},
+               {'When':'1 hour ago', 'Who': 'Lose White', 'Description':'Added fist chapter'}, 
+               {'When':'2 hours ago', 'Who':'Jordan Whash', 'Description': 'Created new account'}
+
+          ]
+
+          ReactDOM.render(<Example2 headings={['When', 'Who', 'Description']} data={data} />, document.querySelector("#myApp"));
      }
 
      handleExample3() {

@@ -5,7 +5,10 @@ export default class Example1 extends React.Component {
 
 	render(){
 		return (
-			<div>Hello Example1 AAAAAA</div>
+			<div>
+
+				Hello React World
+			</div>
 		);
 	}
 }
