@@ -27,7 +27,7 @@ export default class Example4 extends React.Component {
 			<div>
 				<p>
 					Input Your Name:
-					<input type='text' name='yourname' onChange={this.handlerInputName} />
+					<input type='text' name='yourname' value='aaaa' onChange={this.handlerInputName} />
 				</p>
 				<p>
 					<button onClick={this.handlerSubmit}>Submit</button>
