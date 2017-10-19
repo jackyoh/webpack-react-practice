@@ -4,16 +4,11 @@
   "description": "React Webpack Babel Starter Kit",
   "main": "''",
   "scripts": {
-    "build": "NODE_ENV=production webpack -p --config webpack.production.config.js --progress --profile --colors",
+    "build":
+      "NODE_ENV=production webpack -p --config webpack.config.prod.js --progress --profile --colors",
     "dev": "webpack-dev-server --progress --profile --colors --hot"
   },
-  "keywords": [
-    "React",
-    "Webpack",
-    "Babel",
-    "Starter",
-    "template"
-  ],
+  "keywords": ["React", "Webpack", "Babel", "Starter", "template"],
   "dependencies": {
     "bootstrap": "3.3.5",
     "json-loader": "^0.5.4",
