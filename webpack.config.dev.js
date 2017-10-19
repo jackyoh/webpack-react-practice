@@ -21,7 +21,7 @@ module.exports = {
   },
   devServer: {
     contentBase: './public',
-    noInfo: true, //  --no-info option
+    noInfo: true,
     hot: true,
     inline: true,
   },
