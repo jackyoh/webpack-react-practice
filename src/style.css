@@ -1,0 +1,16 @@
+.header {
+  background-color: #fff000;
+}
+.menu {
+  background-color: #f3eded;
+  height: 500px;
+  width: 15%;
+  font-size: 150%;
+  float: left;
+}
+
+.contet {
+  background-color: #fff000;
+  width: 85%;
+  float: left;
+}
