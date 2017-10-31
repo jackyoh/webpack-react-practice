@@ -3,24 +3,21 @@ var path = require('path');
 var loaders = require('./webpack.loaders');
 
 module.exports = {
-  entry: ['./src/index.js'],
   devtool: '#inline-source-map',
+  entry: ['./src/index.js'],
   output: {
     publicPath: '/public/',
-    path: path.resolve(__dirname, 'public/'),
+    path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
   },
+  devServer: {
+    contentBase: './public',
+    port: 9000,
+  },
   resolve: {
-    extensions: ['', '.js', '.jsx'],
+    extensions: ['.js', '.jsx'],
   },
   module: {
     loaders: loaders,
   },
-  devServer: {
-    contentBase: 'public',
-    noInfo: true,
-    hot: true,
-    inline: true,
-  },
-  plugins: [new webpack.NoErrorsPlugin()],
 };

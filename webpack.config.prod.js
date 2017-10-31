@@ -1,6 +1,6 @@
-var webpack = require('webpack');
-var path = require('path');
-var loaders = require('./webpack.loaders');
+const webpack = require('webpack');
+const path = require('path');
+const loaders = require('./webpack.loaders');
 
 module.exports = {
   entry: ['./src/index.js'],
@@ -9,7 +9,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   resolve: {
-    extensions: ['', '.js', '.jsx'],
+    extensions: ['.js', '.jsx'],
   },
   module: {
     loaders: loaders,
