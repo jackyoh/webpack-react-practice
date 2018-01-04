@@ -5,10 +5,14 @@ const loaders = require('./webpack.loaders');
 module.exports = {
   entry: ['./src/index.js'],
   output: {
+    publicPath: '/public/',
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
   },
-  devtool: 'source-map',
+  devtool: 'eval',
+  devServer: {
+    contentBase: 'public/',
+  },
   resolve: {
     extensions: ['.js', '.jsx'],
   },
