@@ -1,7 +1,8 @@
-const webpack = require('webpack');
-const path = require('path');
+import webpack from 'webpack';
+import path from 'path';
+import webpackValidator from 'webpack-validator';
 
-module.exports = () => {
+module.exports = env => {
   return {
     entry: './index.js',
     context: path.resolve(__dirname, 'src'),
