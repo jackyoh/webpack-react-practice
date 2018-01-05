@@ -3,14 +3,17 @@ const path = require('path');
 const loaders = require('./webpack.loaders');
 
 module.exports = {
-  entry: './src/index.js',
-  context: path.resolve('src'),
+  devtool: '#inline-source-map',
+  entry: ['./src/index.js'],
   output: {
-    publicPath: '/public/',
-    path: path.resolve('public'),
+    publicPath: '/dist/',
+    path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
   },
-  devtool: 'eval',
+  devServer: {
+    contentBase: './dist',
+    port: 9000,
+  },
   resolve: {
     extensions: ['.js', '.jsx'],
   },
