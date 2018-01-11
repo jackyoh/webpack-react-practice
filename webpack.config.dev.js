@@ -6,12 +6,12 @@ module.exports = {
   devtool: '#inline-source-map',
   entry: ['./src/index.js'],
   output: {
-    publicPath: '/public/',
-    path: path.join(__dirname, 'public'),
+    publicPath: '/dist/',
+    path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
   },
   devServer: {
-    contentBase: './public',
+    contentBase: './dist',
     port: 9000,
   },
   resolve: {
